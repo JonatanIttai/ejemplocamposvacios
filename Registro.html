@@ -1,0 +1,171 @@
+
+<!DOCTYPE HTML>
+<!--
+	
+	
+	@Autor: Jonatan Ittai Flores Mendez.
+             
+-->
+<html>
+	<head>
+		<title>Registro</title>
+		
+	    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<script src="js/Camposvacios.js"></script>
+		<script type="text/javascript">
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+        </script>
+	<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body class="left-sidebar">
+
+		<!-- Header -->
+			<div id="header-wrapper">
+				<div id="header">
+					
+					<!-- Logo -->
+						<h1><img src="images/lol.jpg" width ='100'height='70'/></a><a href="index.php">Smart Phone Central</a></h1>
+					
+						<!-- Navegacion -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.php">Inicio</a></li>
+								<li><a href="personalizacion.php">Personalización</a></li>
+								<li><a href="productos.php">Productos</a></li>
+								<li><a href="#" onClick="MM_openBrWindow('Aviso.php','','width=600,height=400')">Aviso de Privacidad</a></li>
+								<li><a href="somos.php">¿Quienes Somos?</a></li>
+							</ul>
+						</nav>
+				
+				</div>
+			</div>
+		
+		<!-- Main -->
+			<div id="main-wrapper">
+				<div class="container">
+					<div class="row">
+						<div class="12u skel-cell-important">
+							
+							<!-- Content -->
+								<article class="box post">
+									<a class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+											<form id="guardar" name="guardar" method="post" onSubmit="return validarfor();>
+					<?php  
+									   ?>
+					<B>Usuario</B><BR>
+					<input type="text" NAME="Usu" required="required" id="usu" maxlength=15 placeholder="Ejemplo: Julio Cesar"><BR><BR>
+				    <B>Password</B><BR>
+					<input type="password" NAME="Pass" required="required" id="pass" maxlength=15 placeholder="Ejemplo: Julio Cesar"><BR><BR>
+					<B>Nombre</B><BR>
+					<input type="text" NAME="Nom" required="required" id="nom" maxlength=30 placeholder="Ejemplo: Julio Cesar"><BR><BR>
+					<B>Apellido Paterno</B><BR>
+					<input type="text" NAME="Pate" required="required" id="ap" maxlength=30 placeholder="Ejemplo: Herrera"><BR><BR>
+					<B>Apellido Materno </B><BR>
+					<input type="text" NAME="Mate" required="required" id="am" maxlength=30 placeholder="Ejemplo: Calzada"><BR><BR>
+					<B>Dirección</B><BR>
+					<input type="text" NAME="Dire" required="required" id="direc" maxlength="100" placeholder="Ejemplo: Calle, numero, Colonia"><BR><BR>
+					<B>Código Postal</B><BR>
+					<input type="text" NAME="CP" required="required" id="CP" maxlength="5" placeholder="Ejemplo:20196" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;"><BR><BR>
+					<B>Teléfono Móvil</B><BR>
+					<input type="text" NAME="Tel" required="required" id="tel" maxlength=10 placeholder="Ejemplo: 449 552 34 56" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;"><BR><BR>
+                    <B>Numero de Tarjeta</B><BR>
+					<input type="text" NAME="Tar" required="required" id="tar" maxlength=16 placeholder="Ejemplo: 34564546" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;"><BR><BR>
+					<B>e-mail</B><BR>
+					<input type="text" NAME="Email" required="required" id="email" maxlength=40 placeholder="Ejemplo: locochon@live.com"><BR><BR>
+					<B>Estado</B><BR>
+					<input type="text" NAME="Estado" required="required" id="pais" maxlength=20 placeholder="Ejemplo: Jalisco"><BR><BR>
+					<B>Municipio o Ciudad</B><BR>
+					<input type="text" NAME="Muni" required="required" id="ciudad" maxlength=33 placeholder="Ejemplo: Guadalajara"><BR><BR>
+								</article>
+								<footer>
+								<ul class="actions">
+								<button TYPE=SUBMIT class="button big">Registrar</button>
+								</ul>
+								</footer>
+					</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<!-- Footer -->
+			<div id="footer-wrapper">
+				<section id="footer" class="container">
+					<div class="row">
+						<div class="4u">
+							<section>
+								<header>
+									<h2>¿Quienes Somos?</h2>
+								</header>
+								<a href="somos.php" class="image featured"><img src="images/quien.png" alt="" /></a>
+								<p>
+									Somos una empresa muy responsable sino no hubiéremos entregado este trabajo
+								</p>
+								<footer>
+									<a href="" class="button">Mas información</a>
+								</footer>
+							</section>
+						</div>
+						<div class="4u">
+							<section>
+								<header>
+									<h2>Contacto</h2>
+								</header>
+								<ul class="social">
+									<li><a class="icon fa-facebook" href="#"><span class="label">Facebook</span></a></li>
+									<li><a class="icon fa-twitter" href="#"><span class="label">Twitter</span></a></li>
+									<li><a class="icon fa-dribbble" href="#"><span class="label">Dribbble</span></a></li>
+									<li><a class="icon fa-linkedin" href="#"><span class="label">LinkedIn</span></a></li>
+									<li><a class="icon fa-google-plus" href="#"><span class="label">Google+</span></a></li>
+								</ul>
+								<ul class="contact">
+									<li>
+										<h3>Dirección</h3>
+										<p>
+											Smart Phone Central<br>
+											Blvd. Zacatecas Norte 849<br>
+											Col. Rancho las Trojes De Alonso,<br>
+											C.P.: 20116<br>
+										</p>
+									</li>
+									<li>
+										<h3>Email</h3>
+										<p><a href="#">smartphone@central.com</a></p>
+									</li>
+									<li>
+										<h3>Teléfono</h3>
+										<p>Interior de Aguascalientes<br><p>(449) 552 2010</p></p>
+										<p>Lada Sin Costo<br><p>01 800 552 2010</p></p>
+										
+									</li>
+								</ul>
+							</section>
+						</div>
+					</div>
+							<!-- Copyright -->
+								<div id="copyright">
+									<ul class="links">
+										<li>&copy; Derechos reservados a Smart Phone Central.</li><li>Diseñado: HTLM5</a></li>
+									</ul>
+								</div>
+
+						</div>
+
+	</body>
+</html>
